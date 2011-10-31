@@ -1,0 +1,13 @@
+!!! 5
+%html
+  %head
+    = render :partial => 'common/head'
+  %body
+    = render :partial => 'common/header'
+    #container
+      .wrapper#scroller
+        #content
+          .wrapper
+            = yield
+
+    = render :partial => 'common/footer'

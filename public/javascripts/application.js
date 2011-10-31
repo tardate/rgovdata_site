@@ -1,2 +1,15 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+var RGD = {
+  config: {},
+  
+  init: function(settings) {
+    $.extend(RGD.config, settings);
+    RGD.setup();
+  },
+
+  setup: function() {
+    setTimeout(RGD.asyncSetup, 200);
+  },
+  asyncSetup: function() {
+  }
+
+};

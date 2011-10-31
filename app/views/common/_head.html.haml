@@ -1,0 +1,9 @@
+%title= t('site.title')
+%meta{ :name => "description", :content => t('site.description') }
+%meta{ :name => "keywords", :content => t('site.keywords') }
+= favicon_link_tag
+= favicon_link_tag 'logo114.png', :rel => 'apple-touch-icon', :type => 'image/png'
+%meta{ :charset => "UTF-8" }
+= csrf_meta_tag
+= stylesheet_link_tag "compiled/screen.css", :media => "all"
+= javascript_include_tag "modernizr.js"

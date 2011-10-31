@@ -1,0 +1,11 @@
+# Enter your per-environment constants below
+
+development: &default
+  
+
+production:
+  <<: *default
+  ga_id: UA-4894631-12
+  
+test:
+  <<: *default
