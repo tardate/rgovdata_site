@@ -4,7 +4,7 @@
 en:
   site:
     title: RGovData
-    slogan: "Making govenment data as easy to swallow as 'gem install rgovdata'"
+    slogan: "..making it easier to swallow government data (with ruby/rails)"
     description: RGovData
     keywords: "government data, ruby, rails, gem, rgovdata"
 

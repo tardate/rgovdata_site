@@ -1,0 +1,16 @@
+#header {
+  @include single-box-shadow(rgba(0,0,0,.9), 0px, 5px, 5px);
+  background-color: $c_bg_header;
+  color: $c_text_header;
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  h1 {
+    font-size: 52px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-family: $f_with_style;
+    font-style: italic;
+  }
+}
