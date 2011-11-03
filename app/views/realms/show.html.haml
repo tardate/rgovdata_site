@@ -1,4 +1,7 @@
+%h2= t('.title')
 = @realm.to_s
 %ul
   - @realm.records.each do |service|
     %li= link_to service, service_path(service.to_param)
+
+.info= t('rgovdata.live_warning')

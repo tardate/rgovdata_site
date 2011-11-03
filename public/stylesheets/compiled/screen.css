@@ -155,9 +155,10 @@ div.field, div.actions {
 #header h2 {
   font-family: Times New Roman, Serif;
   font-style: italic;
+  font-weight: normal;
 }
 
-/* line 17, ../../../app/stylesheets/_header.scss */
+/* line 18, ../../../app/stylesheets/_header.scss */
 ul#nav {
   clear: right;
   list-style-type: none;
@@ -167,7 +168,7 @@ ul#nav {
   text-align: center;
   width: 800px;
 }
-/* line 25, ../../../app/stylesheets/_header.scss */
+/* line 26, ../../../app/stylesheets/_header.scss */
 ul#nav li {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -186,9 +187,19 @@ ul#nav li {
   cursor: hand;
 }
 /* line 36, ../../../app/stylesheets/_header.scss */
+ul#nav li a, ul#nav li a:visited {
+  color: #e2e2e2;
+  text-decoration: none;
+}
+/* line 41, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover, ul#nav li.selected {
   background-color: #a59f94;
   color: white;
+}
+/* line 44, ../../../app/stylesheets/_header.scss */
+ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.selected a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 /* line 1, ../../../app/stylesheets/_footer.scss */
@@ -201,4 +212,20 @@ ul#nav li:hover, ul#nav li.selected {
   margin: 30px auto;
   width: 800px;
   text-align: center;
+}
+
+/* line 10, ../../../app/stylesheets/_footer.scss */
+ul.bottom_nav {
+  clear: both;
+  list-style-type: none;
+  display: inline-block;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+/* line 17, ../../../app/stylesheets/_footer.scss */
+ul.bottom_nav li {
+  float: left;
+  height: 20px;
+  margin-right: 5px;
 }

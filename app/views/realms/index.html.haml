@@ -1,3 +1,6 @@
+%h2= t('.title')
 %ul
   - @realms.each do |realm|
     %li= link_to realm, realm_path(realm)
+
+.info= t('rgovdata.live_warning')

@@ -1,4 +1,6 @@
 module ApplicationHelper
+
+  # Inserts Google Analytics script
   def insert_ga_script(ga_id)
     return unless ga_id.present?
     return raw <<-EOGA
@@ -13,5 +15,15 @@ module ApplicationHelper
   })();
 </script>
     EOGA
+  end
+
+  # Returns main menu item collection
+  def menu_options
+    [
+      {:title => t('dashboards.show.title'), :url => root_url, :selected_matcher => 'dashboards'},
+      {:title => t('guides.index.title'), :url => guides_url, :selected_matcher => 'guides'},
+      {:title => t('docs.index.title'), :url => docs_url, :selected_matcher => 'docs'},
+      {:title => t('realms.index.title'), :url => realms_url, :selected_matcher => 'realms|services'}
+    ]
   end
 end

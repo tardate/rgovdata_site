@@ -7,3 +7,16 @@
     text-align: center;
   }
 }
+ul.bottom_nav {
+  clear: both;
+  list-style-type: none;
+  display: inline-block;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  li {
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+  }
+}

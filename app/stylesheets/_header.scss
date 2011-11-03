@@ -12,6 +12,7 @@
   h2 {
     font-family: $f_with_style;
     font-style: italic;
+    font-weight: normal;
   }
 }
 ul#nav {
@@ -32,9 +33,17 @@ ul#nav {
     background-color: $c_bg_nav;
     color: $c_text_nav;
     cursor: pointer; cursor: hand;
+    a, a:visited {
+      color: $c_text_nav;
+      text-decoration: none;
+    }
   }
   li:hover, li.selected {
     background-color: $c_bg_nav_sel;
     color: $c_text_nav_sel;
+    a, a:visited {
+      color: $c_text_nav_sel;
+      text-decoration: none;
+    }
   }
 }

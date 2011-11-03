@@ -4,7 +4,5 @@
     %h2= t('site.slogan')
   .nav
     %ul#nav
-      %li= link_to "About", root_url
-      %li Getting Started
-      %li= link_to "Live Explorer", realms_url
-      %li Documentation
+      - menu_options.each do |menu_item|
+        %li{:class=>(controller_name=~/#{menu_item[:selected_matcher]}/ ? 'selected' : '')}= link_to menu_item[:title], menu_item[:url]
