@@ -1,9 +1,20 @@
 $f_face: arial, helvetica, sans-serif;
 $f_with_style: Times New Roman, Serif;
 
-$c_bg: #FFF;
+$c_bg: #CCC;
+$c_bg_content: #FFF;
 $c_bg_header: #C52F24;
-$c_bg_footer: #000;
+$c_bg_footer: #CCC;
 $c_text: #000;
+$c_text_content: $c_text;
 $c_text_header: #FFF;
-$c_text_footer: #FFF;
+$c_text_footer: #000;
+
+
+$c_bg_nav: #C5AFA4;
+$c_text_nav: #E2E2E2;
+$c_bg_nav_sel: #A59F94;
+$c_text_nav_sel: #FFF;
+
+$d_wm_page: 980px;
+$d_w_content: 800px;

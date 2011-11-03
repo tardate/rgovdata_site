@@ -3,6 +3,7 @@ body {
   color: $c_text;
   margin: 0;
   padding: 0;
+  min-width: $d_wm_page;
 }
 
 body, p, ol, ul, td {

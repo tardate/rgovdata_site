@@ -1,3 +1,9 @@
 #footer {
   background-color: $c_bg_footer;
+  color: $c_text_footer;
+  > .wrapper {
+    margin: 30px auto;
+    width: $d_w_content;
+    text-align: center;
+  }
 }

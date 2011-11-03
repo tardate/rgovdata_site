@@ -1,56 +1,57 @@
 /* line 1, ../../../app/stylesheets/_base.scss */
 body {
-  background-color: white;
+  background-color: #cccccc;
   color: black;
   margin: 0;
   padding: 0;
+  min-width: 980px;
 }
 
-/* line 8, ../../../app/stylesheets/_base.scss */
+/* line 9, ../../../app/stylesheets/_base.scss */
 body, p, ol, ul, td {
   font-family: arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 14, ../../../app/stylesheets/_base.scss */
+/* line 15, ../../../app/stylesheets/_base.scss */
 a {
   color: black;
 }
 
-/* line 15, ../../../app/stylesheets/_base.scss */
+/* line 16, ../../../app/stylesheets/_base.scss */
 a:visited {
   color: black;
 }
 
-/* line 16, ../../../app/stylesheets/_base.scss */
+/* line 17, ../../../app/stylesheets/_base.scss */
 a:hover {
   color: black;
 }
 
-/* line 18, ../../../app/stylesheets/_base.scss */
+/* line 19, ../../../app/stylesheets/_base.scss */
 a.image {
   text-decoration: none;
 }
 
-/* line 22, ../../../app/stylesheets/_base.scss */
+/* line 23, ../../../app/stylesheets/_base.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 26, ../../../app/stylesheets/_base.scss */
+/* line 27, ../../../app/stylesheets/_base.scss */
 #notice {
   color: green;
 }
 
-/* line 30, ../../../app/stylesheets/_base.scss */
+/* line 31, ../../../app/stylesheets/_base.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 36, ../../../app/stylesheets/_base.scss */
+/* line 37, ../../../app/stylesheets/_base.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -60,7 +61,7 @@ div.field, div.actions {
   background-color: #f0f0f0;
 }
 
-/* line 45, ../../../app/stylesheets/_base.scss */
+/* line 46, ../../../app/stylesheets/_base.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -72,10 +73,65 @@ div.field, div.actions {
   color: #fff;
 }
 
-/* line 56, ../../../app/stylesheets/_base.scss */
+/* line 57, ../../../app/stylesheets/_base.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+/* line 1, ../../../app/stylesheets/_content.scss */
+#container {
+  background-color: white;
+  color: black;
+}
+/* line 4, ../../../app/stylesheets/_content.scss */
+#container > .wrapper {
+  padding: 20px 0;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 11, ../../../app/stylesheets/_content.scss */
+.info, .note, .code {
+  background: url("/images/tab_note.gif") no-repeat scroll left top #fff9d8;
+  border: medium none;
+  margin: 0.25em 0 1.5em;
+  padding: 1em 1em 1em 48px;
+}
+
+/* line 17, ../../../app/stylesheets/_content.scss */
+.warning {
+  background: url("/images/tab_red.gif") no-repeat scroll left top #f9d9d8;
+  border: medium none;
+  margin: 15px 0 15px 0;
+  padding: 1.25em 1.25em 1.25em 48px;
+}
+
+/* line 23, ../../../app/stylesheets/_content.scss */
+.info {
+  background: url("/images/tab_info.gif") no-repeat scroll left top #d5e9f6;
+}
+
+/* line 26, ../../../app/stylesheets/_content.scss */
+.code {
+  background: url("/images/tab_grey.gif") no-repeat scroll left top #eeeeee;
+}
+/* line 28, ../../../app/stylesheets/_content.scss */
+.code code {
+  line-height: 20px;
+  /*--Height of each line of code--*/
+  overflow: auto;
+  overflow-Y: hidden;
+  /*--Hides vertical scroll created by IE--*/
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 18px;
+  display: block;
+  background: #111;
+  color: #fff;
+  font-size: 10px;
+  font-family: monaco, 'courier new';
+  text-align: left;
 }
 
 /* line 1, ../../../app/stylesheets/_header.scss */
@@ -99,4 +155,50 @@ div.field, div.actions {
 #header h2 {
   font-family: Times New Roman, Serif;
   font-style: italic;
+}
+
+/* line 17, ../../../app/stylesheets/_header.scss */
+ul#nav {
+  clear: right;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 26px;
+  text-align: center;
+  width: 800px;
+}
+/* line 25, ../../../app/stylesheets/_header.scss */
+ul#nav li {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  width: 100px;
+  height: 20px;
+  margin-right: 5px;
+  padding: 3px 13px;
+  background-color: #c5afa4;
+  color: #e2e2e2;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 36, ../../../app/stylesheets/_header.scss */
+ul#nav li:hover, ul#nav li.selected {
+  background-color: #a59f94;
+  color: white;
+}
+
+/* line 1, ../../../app/stylesheets/_footer.scss */
+#footer {
+  background-color: #cccccc;
+  color: black;
+}
+/* line 4, ../../../app/stylesheets/_footer.scss */
+#footer > .wrapper {
+  margin: 30px auto;
+  width: 800px;
+  text-align: center;
 }
