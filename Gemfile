@@ -18,6 +18,7 @@ gem 'browser'
 # per env constants
 gem 'app_constants'
 
+gem 'rgovdata', :path => '../rgovdata'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.4"
