@@ -30,13 +30,12 @@ ul#nav {
   li {
     @include border-radius(10px);
     float: left;
+    font-size: 14px;
     width: 100px;
-    height: 20px;
     margin-right: 5px;
     padding: 3px 13px;
     background-color: $c_bg_nav;
     color: $c_text_nav;
-    xcursor: pointer; cursor: hand;
     a, a:visited {
       color: $c_text_nav;
       text-decoration: none;

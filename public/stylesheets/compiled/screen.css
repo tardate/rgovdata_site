@@ -181,26 +181,24 @@ ul#nav li {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   float: left;
+  font-size: 14px;
   width: 100px;
-  height: 20px;
   margin-right: 5px;
   padding: 3px 13px;
   background-color: #c5afa4;
   color: #444444;
-  xcursor: pointer;
-  cursor: hand;
 }
-/* line 40, ../../../app/stylesheets/_header.scss */
+/* line 39, ../../../app/stylesheets/_header.scss */
 ul#nav li a, ul#nav li a:visited {
   color: #444444;
   text-decoration: none;
 }
-/* line 45, ../../../app/stylesheets/_header.scss */
+/* line 44, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover, ul#nav li.selected {
   background-color: #f53f34;
   color: white;
 }
-/* line 48, ../../../app/stylesheets/_header.scss */
+/* line 47, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.selected a:visited {
   color: white;
   text-decoration: none;
