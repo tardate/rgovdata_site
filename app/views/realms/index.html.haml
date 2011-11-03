@@ -1,6 +1,18 @@
 %h2= t('.title')
+
+%h3= t('.collection_title')
 %ul
   - @realms.each do |realm|
     %li= link_to realm, realm_path(realm)
-
 .info= t('rgovdata.live_warning')
+
+%h3= t('howto.api')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        # Get the "catalog of catalogs"
+        catalogs = RGovData::Catalog.get('//')
+        # Then we can iterate over the available catalogs..
+        catalogs.records.each { |catalog| puts "Catalog for realm: \#{catalog.realm}" }
+

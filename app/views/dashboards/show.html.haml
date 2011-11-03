@@ -9,24 +9,6 @@
 %p
   asdasdad
 
-%h2 h2..
-
-.code
-  some code
-  multi-line
-
-%p
-  asd
-
-%pre.code
-  %code
-    = preserve do
-      :escaped
-        def generate_api_signature(params={})
-          sorted_params = params.sort_by {|key, value| key.to_s.gsub(/\s/,'_')}.join('').to_s
-          crypt = Digest::SHA2.new << (sorted_params + private_key)
-          crypt.to_s
-        end
 
 %ul
   %li list

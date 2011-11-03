@@ -11,11 +11,17 @@ en:
   guides:
     index:
       title: Getting Started
+  howto:
+    api: How to do this with the API..
+    cli: How to do this from the command line..
   realms:
     index:
-      title: Live Explorer
+      title: Live Explorer - The Realm Catalog
+      short_title: Live Explorer
+      collection_title: "Service Catalogs are available for the Following Realms:"
     show:
-      title: Live Explorer
+      title: Live Explorer - Catalog for a Specific Realm
+      collection_title: "Available Services:"
   services:
     index:
       title: Live Explorer

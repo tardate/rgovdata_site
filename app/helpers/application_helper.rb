@@ -30,7 +30,7 @@ module ApplicationHelper
       {:title => t('dashboards.show.title'), :url => root_url, :selected_matcher => 'dashboards'},
       {:title => t('guides.index.title'), :url => guides_url, :selected_matcher => 'guides'},
       {:title => t('docs.index.title'), :url => docs_url, :selected_matcher => 'docs'},
-      {:title => t('realms.index.title'), :url => realms_url, :selected_matcher => 'realms|services'}
+      {:title => t('realms.index.short_title'), :url => realms_url, :selected_matcher => 'realms|services'}
     ]
   end
 end

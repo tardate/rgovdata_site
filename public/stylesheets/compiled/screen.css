@@ -118,18 +118,16 @@ div.field, div.actions {
 }
 /* line 28, ../../../app/stylesheets/_content.scss */
 .code code {
-  line-height: 20px;
-  /*--Height of each line of code--*/
+  line-height: 18px;
   overflow: auto;
   overflow-Y: hidden;
   /*--Hides vertical scroll created by IE--*/
   margin: 0;
-  padding: 18px 0;
-  padding-left: 18px;
+  padding: 10px;
   display: block;
-  background: #111;
-  color: #fff;
-  font-size: 10px;
+  background: #111111;
+  color: white;
+  font-size: 12px;
   font-family: monaco, 'courier new';
   text-align: left;
 }

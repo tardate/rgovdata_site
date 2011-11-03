@@ -1,7 +1,23 @@
 %h2= t('.title')
 = @realm.to_s
+%h3= t('.collection_title')
 %ul
   - @realm.records.each do |service|
-    %li= link_to service, service_path(service.to_param)
+    %li= link_to service, service_path(service)
 
 .info= t('rgovdata.live_warning')
+
+%h3= t('howto.api')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        # get the catalog for the realm based on the :id passed in the request
+        @realm = RGovData::Catalog.get("//\#{params[:id]}")
+        # .. then you can iterate over the available services
+        @realm.services.each do |service|
+          puts "service ID: \#{service.id}"
+        end
+        # Note that as for most catalog classes, you can also use the generic "records" collection:
+        @realm.records.each { |service| puts service.id }
+
