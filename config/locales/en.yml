@@ -27,10 +27,12 @@ en:
     description: RGovData
     keywords: "government data, ruby, rails, gem, rgovdata"
   rgovdata:
+    gem_source: gem source
+    site_source: site source
     live_warning: "Note that these examples are running realtime queries to the backend data services,
       without any special caching of results. It may be slow, and of course is subject to any service
       downtime or performance issues.
       In a real app, you would probably be doing some smart caching, batching or backgrounding of
       requests in order to improve the end-user experience."
     resources: "Resources:"
-    version: "Running with RGovData version %{version}"
+    version: "Running with RGovData gem version %{version}"

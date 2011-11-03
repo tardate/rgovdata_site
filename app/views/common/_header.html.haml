@@ -6,3 +6,4 @@
     %ul#nav
       - menu_options.each do |menu_item|
         %li{:class=>(controller_name=~/#{menu_item[:selected_matcher]}/ ? 'selected' : '')}= link_to menu_item[:title], menu_item[:url]
+  = insert_forkme(AppConstants.github_url)

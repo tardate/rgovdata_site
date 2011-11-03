@@ -144,21 +144,25 @@ div.field, div.actions {
   color: white;
   width: 100%;
   margin: 0;
-  padding: 5px 10px;
+  padding: 5px 0;
 }
 /* line 8, ../../../app/stylesheets/_header.scss */
 #header h1 {
   font-size: 52px;
-  margin: 20px 0;
+  line-height: 52px;
+  margin: 20px 20px 0;
+  padding: 0;
 }
-/* line 12, ../../../app/stylesheets/_header.scss */
+/* line 14, ../../../app/stylesheets/_header.scss */
 #header h2 {
   font-family: Times New Roman, Serif;
   font-style: italic;
   font-weight: normal;
+  margin: 0 20px 15px;
+  padding: 0;
 }
 
-/* line 18, ../../../app/stylesheets/_header.scss */
+/* line 22, ../../../app/stylesheets/_header.scss */
 ul#nav {
   clear: right;
   list-style-type: none;
@@ -168,7 +172,7 @@ ul#nav {
   text-align: center;
   width: 800px;
 }
-/* line 26, ../../../app/stylesheets/_header.scss */
+/* line 30, ../../../app/stylesheets/_header.scss */
 ul#nav li {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -182,21 +186,21 @@ ul#nav li {
   margin-right: 5px;
   padding: 3px 13px;
   background-color: #c5afa4;
-  color: #e2e2e2;
-  cursor: pointer;
+  color: #444444;
+  xcursor: pointer;
   cursor: hand;
 }
-/* line 36, ../../../app/stylesheets/_header.scss */
+/* line 40, ../../../app/stylesheets/_header.scss */
 ul#nav li a, ul#nav li a:visited {
-  color: #e2e2e2;
+  color: #444444;
   text-decoration: none;
 }
-/* line 41, ../../../app/stylesheets/_header.scss */
+/* line 45, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover, ul#nav li.selected {
-  background-color: #a59f94;
+  background-color: #f53f34;
   color: white;
 }
-/* line 44, ../../../app/stylesheets/_header.scss */
+/* line 48, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.selected a:visited {
   color: white;
   text-decoration: none;
@@ -205,16 +209,17 @@ ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.se
 /* line 1, ../../../app/stylesheets/_footer.scss */
 #footer {
   background-color: #cccccc;
+  border-top: 2px solid #AAAAAA;
   color: black;
 }
-/* line 4, ../../../app/stylesheets/_footer.scss */
+/* line 5, ../../../app/stylesheets/_footer.scss */
 #footer > .wrapper {
   margin: 30px auto;
   width: 800px;
   text-align: center;
 }
 
-/* line 10, ../../../app/stylesheets/_footer.scss */
+/* line 11, ../../../app/stylesheets/_footer.scss */
 ul.bottom_nav {
   clear: both;
   list-style-type: none;
@@ -223,7 +228,7 @@ ul.bottom_nav {
   margin: 0;
   padding: 0;
 }
-/* line 17, ../../../app/stylesheets/_footer.scss */
+/* line 18, ../../../app/stylesheets/_footer.scss */
 ul.bottom_nav li {
   float: left;
   height: 20px;

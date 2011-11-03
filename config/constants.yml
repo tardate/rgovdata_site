@@ -1,7 +1,8 @@
 # Enter your per-environment constants below
 
 development: &default
-  
+  github_url: https://github.com/tardate/rgovdata
+  site_github_url: https://github.com/tardate/rgovdata_site
 
 production:
   <<: *default

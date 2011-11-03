@@ -4,7 +4,8 @@
       %div= t('rgovdata.version', :version => RGovData::Version::STRING)
       %ul.bottom_nav
         %li= t('rgovdata.resources')
-        %li= link_to "github", "https://github.com/tardate/rgovdata"
+        %li= link_to t('rgovdata.gem_source'), AppConstants.github_url
+        %li= link_to t('rgovdata.site_source'), AppConstants.site_github_url
 
 - if Rails.env.development?
   = javascript_include_tag :jquery_local, :cache => false
