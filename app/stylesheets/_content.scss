@@ -69,6 +69,9 @@ dl.attributes {
     vertical-align: baseline;
   }
 }
+dl.attributes.classes dd {
+  margin-left: 200px;
+}
 
 table.datatable {
   width: 100%;
