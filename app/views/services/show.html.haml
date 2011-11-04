@@ -2,7 +2,7 @@
 %dl.attributes
   - @service.meta_attributes.each do |attribute|
     %dt= attribute
-    %dd= @service.send(attribute)
+    %dd= raw auto_link @service.send(attribute).to_s
 
 %h3= t('.collection_title')
 %ul
