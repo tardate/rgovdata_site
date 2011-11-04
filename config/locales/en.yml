@@ -31,6 +31,8 @@ en:
         p2: "It is up to *you* to ensure that your use of data complies with all the applicable
           restrictions. RGovData simply provides a mechanism for getting the data, and explicitly
           does not provide any rights enforcement or protection."
+      resources:
+        title: Resources
   datasets:
     show:
       title: Live Explorer - a Specific Dataset
