@@ -5,5 +5,30 @@
   %li ruby 1.9
   %li optional: rails 3.0.x
   
-%h3 Installation
-%p
+%h3 Installation - Basic Gem and Command Line Usage
+%div Make sure you have a working ruby installation, then simply:
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        $ gem install rgovdata
+%div When the installation is complete, try the command line:
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        $ rgd
+        rgovdata client v0.1.0. Type 'help' for info...
+        rgd://sg> _
+
+%h3 Installation - Rails
+%div Add rgovdata to your Gemfile and run bundler:
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        $ cat Gemfile
+        ...
+        gem 'rgovdata', '~> 0.1.0'
+        ...
+        $ bundle install
