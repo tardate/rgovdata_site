@@ -1,0 +1,41 @@
+= RGovData Site
+
+RGovData is a ruby library for really simple access to government data.
+
+RGovData Site is the full rails source for the companion
+demonstration and documentation site at
+link:http://rgovdata.com
+
+As with the RGovData gem itself, this site is open sourced under an MIT license,
+and contributions and collaboration is most welcome.
+
+
+== Requirements
+
+* ruby 1.9
+* rails 3.0.10
+* postgreSQL
+
+
+== Resources
+
+* {RGovData gem on GitHub}[https://github.com/tardate/rgovdata]
+* {RGovData site on GitHub}[https://github.com/tardate/rgovdata_site]
+* {RGovData live site}[http://rgovdata.com]
+
+
+== Contributing to RGovData Site
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so your changes don't get unintentionally broken in a future version.
+* Please try not to mess with the Rakefile, version, gemspec or changelog. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so the mater repository maintainer can cherry-pick around it.
+
+
+== Copyright
+
+Copyright (c) 2011 Paul Gallagher and open-sourced under an MIT license.
+See LICENSE for further details.
