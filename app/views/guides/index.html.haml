@@ -21,6 +21,20 @@
         rgovdata client v0.1.0. Type 'help' for info...
         rgd://sg> _
 
+%div Or from a ruby script:
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        require 'rubygems'
+        require 'rgovdata'
+
+        dataset = RGovData::Catalog.get('//us/eqs7day-M1/csv')
+        puts dataset.attributes
+        dataset.records.each do |row|
+          puts row
+        end
+
 %h3 Installation - Rails
 %div Add rgovdata to your Gemfile and run bundler:
 %pre.code
