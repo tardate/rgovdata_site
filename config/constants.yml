@@ -3,7 +3,8 @@
 development: &default
   github_url: https://github.com/tardate/rgovdata
   site_github_url: https://github.com/tardate/rgovdata_site
-
+  live_explorer_record_limit: 10
+  
 production:
   <<: *default
   ga_id: UA-4894631-12

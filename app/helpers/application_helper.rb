@@ -33,4 +33,10 @@ module ApplicationHelper
       {:title => t('realms.index.short_title'), :url => realms_url, :selected_matcher => 'realms|services'}
     ]
   end
+
+  def insert_record_limit_note
+    limit = AppConstants.live_explorer_record_limit
+    return unless limit.present?
+    content_tag(:div, t('limited_records', :limit => limit), :class => "note")
+  end
 end

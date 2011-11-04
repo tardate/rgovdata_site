@@ -18,6 +18,8 @@ en:
   howto:
     api: How to do this with the API..
     cli: How to do this from the command line..
+  limited_records: "Note: only displaying a sample set of %{limit} records for
+    demonstration purposes"
   realms:
     index:
       title: Live Explorer - The Realm Catalog
