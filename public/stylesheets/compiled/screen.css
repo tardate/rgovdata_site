@@ -1008,7 +1008,17 @@ div.field, div.actions {
   margin: 0 auto;
 }
 
-/* line 11, ../../../app/stylesheets/_content.scss */
+/* line 10, ../../../app/stylesheets/_content.scss */
+.loading {
+  background: url("/images/loading.gif") no-repeat scroll 5px 5px white;
+  font-size: 12px;
+  min-height: 23px;
+  margin: 0 auto;
+  padding: 2px 0px 15px 43px;
+  width: 200px;
+}
+
+/* line 19, ../../../app/stylesheets/_content.scss */
 .info, .note, .code {
   background: url("/images/tab_note.gif") no-repeat scroll left top #fff9d8;
   border: medium none;
@@ -1016,7 +1026,7 @@ div.field, div.actions {
   padding: 1em 1em 1em 48px;
 }
 
-/* line 17, ../../../app/stylesheets/_content.scss */
+/* line 25, ../../../app/stylesheets/_content.scss */
 .warning {
   background: url("/images/tab_red.gif") no-repeat scroll left top #f9d9d8;
   border: medium none;
@@ -1024,16 +1034,16 @@ div.field, div.actions {
   padding: 1.25em 1.25em 1.25em 48px;
 }
 
-/* line 23, ../../../app/stylesheets/_content.scss */
+/* line 31, ../../../app/stylesheets/_content.scss */
 .info {
   background: url("/images/tab_info.gif") no-repeat scroll left top #d5e9f6;
 }
 
-/* line 26, ../../../app/stylesheets/_content.scss */
+/* line 34, ../../../app/stylesheets/_content.scss */
 .code {
   background: url("/images/tab_grey.gif") no-repeat scroll left top #eeeeee;
 }
-/* line 28, ../../../app/stylesheets/_content.scss */
+/* line 36, ../../../app/stylesheets/_content.scss */
 .code code {
   line-height: 18px;
   overflow: auto;
@@ -1049,7 +1059,7 @@ div.field, div.actions {
   text-align: left;
 }
 
-/* line 43, ../../../app/stylesheets/_content.scss */
+/* line 51, ../../../app/stylesheets/_content.scss */
 dl.attributes {
   border: 1px solid #CECECE;
   font-size: 13px;
@@ -1060,7 +1070,7 @@ dl.attributes {
   -khtml-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 47, ../../../app/stylesheets/_content.scss */
+/* line 55, ../../../app/stylesheets/_content.scss */
 dl.attributes dt {
   color: #666666;
   font-weight: bold;
@@ -1068,7 +1078,7 @@ dl.attributes dt {
   margin: 5px 5px -4em;
   padding: 5px;
 }
-/* line 54, ../../../app/stylesheets/_content.scss */
+/* line 62, ../../../app/stylesheets/_content.scss */
 dl.attributes dd {
   background-color: #AAAAAA;
   margin: 5px 5px 5px 160px;
@@ -1079,13 +1089,13 @@ dl.attributes dd {
   vertical-align: baseline;
 }
 
-/* line 65, ../../../app/stylesheets/_content.scss */
+/* line 73, ../../../app/stylesheets/_content.scss */
 table.datatable {
   width: 100%;
   font-size: 10px;
   line-height: 14px;
 }
-/* line 69, ../../../app/stylesheets/_content.scss */
+/* line 77, ../../../app/stylesheets/_content.scss */
 table.datatable td {
   vertical-align: top;
 }

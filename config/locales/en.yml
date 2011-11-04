@@ -46,6 +46,9 @@ en:
     cli: How to do this from the command line..
   limited_records: "Note: only displaying a sample set of %{limit} records for
     demonstration purposes"
+  loading:
+    general: "Loading.."
+    api: "Asking the gahmen for data .. please wait, may take a few moments"
   realms:
     index:
       title: Live Explorer - The Realm Catalog

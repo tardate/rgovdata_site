@@ -5,20 +5,7 @@
     %dd= @dataset.send(attribute)
 %h3= t('.collection_title')
 =insert_record_limit_note
-- if @dataset.attributes
-  %table.datatable.display
-    %thead
-      %tr
-        - @dataset.attributes.each do |attribute|
-          %th= attribute
-    %tbody
-      - @dataset.records.each do |row|
-        %tr
-          - @dataset.attributes.each do |attribute|
-            %td= @dataset.attribute_value(row,attribute)
-- else
-  %ul
-    - @dataset.records.each do |row|
-      %li= row
+.pageload{ 'data-url' => table_dataset_url(@dataset) }
+  .loading= t('loading.api')
 
 .info= t('rgovdata.live_warning')

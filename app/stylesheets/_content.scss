@@ -7,6 +7,14 @@
     margin: 0 auto;
   }
 }
+.loading {
+  background: url("/images/loading.gif") no-repeat scroll 5px 5px $c_bg_content;
+  font-size: 12px;
+  min-height: 23px;
+  margin: 0 auto;
+  padding: 2px 0px 15px 43px;
+  width: 200px;
+}
 
 .info, .note, .code {
   background: url("/images/tab_note.gif") no-repeat scroll left top #FFF9D8;
