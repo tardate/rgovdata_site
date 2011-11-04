@@ -5,7 +5,7 @@
     %dd= @dataset.send(attribute)
 %h3= t('.collection_title')
 =insert_record_limit_note
-%table
+%table.datatable.display
   %thead
     %tr
       - @dataset.attributes.each do |attribute|
@@ -14,6 +14,6 @@
     - @dataset.records.each do |row|
       %tr
         - @dataset.attributes.each do |attribute|
-          %th= row.send(attribute)
+          %td= row.send(attribute)
 
 .info= t('rgovdata.live_warning')

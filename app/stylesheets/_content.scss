@@ -42,6 +42,7 @@
 
 dl.attributes {
   border: 1px solid #CECECE;
+  font-size: 13px;
   @include border-radius(8px);
   dt {
     color: #666666;
@@ -59,4 +60,14 @@ dl.attributes {
     text-align: left;
     vertical-align: baseline;
   }
+}
+
+table.datatable {
+  width: 100%;
+  font-size: 10px;
+  line-height: 14px;
+  td {
+    vertical-align: top;
+  }
+
 }

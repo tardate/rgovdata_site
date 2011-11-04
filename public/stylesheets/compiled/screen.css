@@ -1,3 +1,920 @@
+/*
+ *  File:         demo_table_jui.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/datatables/ - relative to this CSS file.
+ */
+/*
+ * jQuery UI specific styling
+ */
+/* line 34, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_two_button .ui-button {
+  float: left;
+  cursor: pointer;
+  * cursor: hand;
+}
+
+/* line 40, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers .ui-button {
+  padding: 2px 6px;
+  margin: 0;
+  cursor: pointer;
+  * cursor: hand;
+}
+
+/* line 47, ../../../app/stylesheets/_datatable_jui.scss */
+.ui-buttonset .ui-button {
+  margin-right: -0.1em !important;
+}
+
+/* line 51, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers {
+  width: 350px !important;
+}
+
+/* line 55, ../../../app/stylesheets/_datatable_jui.scss */
+.ui-toolbar {
+  padding: 5px;
+}
+
+/* line 59, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_paginate {
+  width: auto;
+}
+
+/* line 63, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_info {
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+/* line 68, ../../../app/stylesheets/_datatable_jui.scss */
+table.display thead th {
+  padding: 3px 0px 3px 10px;
+  cursor: pointer;
+  * cursor: hand;
+}
+
+/* line 74, ../../../app/stylesheets/_datatable_jui.scss */
+div.dataTables_wrapper .ui-widget-header {
+  font-weight: normal;
+}
+
+/*
+ * Sort arrow icon positioning
+ */
+/* line 82, ../../../app/stylesheets/_datatable_jui.scss */
+table.display thead th div.DataTables_sort_wrapper {
+  position: relative;
+  padding-right: 20px;
+  padding-right: 20px;
+}
+
+/* line 88, ../../../app/stylesheets/_datatable_jui.scss */
+table.display thead th div.DataTables_sort_wrapper span {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * Everything below this line is the same as demo_table.css. This file is
+ * required for 'cleanliness' of the markup
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+/* line 111, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper {
+  position: relative;
+  min-height: 302px;
+  _height: 302px;
+  zoom: 1;
+  /* Feeling sorry for IE */
+}
+
+/* line 118, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_processing {
+  position: absolute;
+  top: 4px;
+  right: 50%;
+  width: 110px;
+  padding: 3px;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+/* line 133, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_length {
+  width: 40%;
+  float: left;
+}
+/* line 136, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_length select {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  width: auto !important;
+  border: 1px solid #AAAAAA;
+  font-size: 11px;
+  padding: 3px;
+  min-width: 0px;
+  margin-right: 0px;
+}
+
+/* line 147, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_filter {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+/* line 152, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_filter input {
+  width: 150px;
+  margin: 0;
+  padding: 1px 0;
+}
+
+/* line 158, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_info {
+  width: 50%;
+  float: left;
+}
+
+/* line 163, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_paginate {
+  float: right;
+  text-align: right;
+}
+
+/* Pagination nested */
+/* line 169, ../../../app/stylesheets/_datatable_jui.scss */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+  height: 19px;
+  width: 19px;
+  margin-left: 3px;
+  float: left;
+}
+
+/* line 176, ../../../app/stylesheets/_datatable_jui.scss */
+.paginate_disabled_previous {
+  background-image: url("/images/datatables/back_disabled.jpg");
+}
+
+/* line 180, ../../../app/stylesheets/_datatable_jui.scss */
+.paginate_enabled_previous {
+  background-image: url("/images/datatables/back_enabled.jpg");
+}
+
+/* line 184, ../../../app/stylesheets/_datatable_jui.scss */
+.paginate_disabled_next {
+  background-image: url("/images/datatables/forward_disabled.jpg");
+}
+
+/* line 188, ../../../app/stylesheets/_datatable_jui.scss */
+.paginate_enabled_next {
+  background-image: url("/images/datatables/forward_enabled.jpg");
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+/* line 197, ../../../app/stylesheets/_datatable_jui.scss */
+table.display {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 203, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tfoot th {
+  padding: 3px 0px 3px 10px;
+  font-weight: bold;
+  font-weight: normal;
+}
+
+/* line 209, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.heading2 td {
+  border-bottom: 1px solid #aaa;
+}
+
+/* line 213, ../../../app/stylesheets/_datatable_jui.scss */
+table.display td {
+  padding: 3px 10px;
+}
+
+/* line 217, ../../../app/stylesheets/_datatable_jui.scss */
+table.display td.center {
+  text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+/* line 227, ../../../app/stylesheets/_datatable_jui.scss */
+.sorting_asc {
+  background: url("/images/datatables/sort_asc.png") no-repeat center right;
+}
+
+/* line 231, ../../../app/stylesheets/_datatable_jui.scss */
+.sorting_desc {
+  background: url("/images/datatables/sort_desc.png") no-repeat center right;
+}
+
+/* line 235, ../../../app/stylesheets/_datatable_jui.scss */
+.sorting {
+  background: url("/images/datatables/sort_both.png") no-repeat center right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+/* line 245, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.gradeA {
+  background-color: #ddffdd;
+}
+
+/* line 249, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.gradeA {
+  background-color: #eeffee;
+}
+
+/* line 256, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.gradeA {
+  background-color: #ddffdd;
+}
+
+/* line 260, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.gradeA {
+  background-color: #eeffee;
+}
+
+/* line 264, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.gradeC {
+  background-color: #ddddff;
+}
+
+/* line 268, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.gradeC {
+  background-color: #eeeeff;
+}
+
+/* line 272, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.gradeX {
+  background-color: #ffdddd;
+}
+
+/* line 276, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.gradeX {
+  background-color: #ffeeee;
+}
+
+/* line 280, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.gradeU {
+  background-color: #ddd;
+}
+
+/* line 284, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.gradeU {
+  background-color: #eee;
+}
+
+/* line 289, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd {
+  background-color: #E2E4FF;
+}
+
+/* line 293, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even {
+  background-color: white;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+/* line 304, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_scroll {
+  clear: both;
+}
+
+/* line 308, ../../../app/stylesheets/_datatable_jui.scss */
+.top, .bottom {
+  padding: 15px;
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+}
+
+/* line 314, ../../../app/stylesheets/_datatable_jui.scss */
+.top .dataTables_info {
+  float: none;
+}
+
+/* line 318, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_empty {
+  text-align: center;
+}
+
+/* line 322, ../../../app/stylesheets/_datatable_jui.scss */
+tfoot input {
+  margin: 0.5em 0;
+  width: 100%;
+  color: #444;
+}
+
+/* line 328, ../../../app/stylesheets/_datatable_jui.scss */
+tfoot input.search_init {
+  color: #999;
+}
+
+/* line 332, ../../../app/stylesheets/_datatable_jui.scss */
+td.group {
+  background-color: #d1cfd0;
+  border-bottom: 2px solid #A19B9E;
+  border-top: 2px solid #A19B9E;
+}
+
+/* line 338, ../../../app/stylesheets/_datatable_jui.scss */
+td.details {
+  background-color: #d1cfd0;
+  border: 2px solid #A19B9E;
+}
+
+/* line 344, ../../../app/stylesheets/_datatable_jui.scss */
+.example_alt_pagination div.dataTables_info {
+  width: 40%;
+}
+
+/* line 349, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers span.paginate_button,
+.paging_full_numbers span.paginate_active {
+  border: 1px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 3px;
+  cursor: pointer;
+  *cursor: hand;
+}
+
+/* line 359, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers span.paginate_button {
+  background-color: #ddd;
+}
+
+/* line 363, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers span.paginate_button:hover {
+  background-color: #ccc;
+}
+
+/* line 367, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers span.paginate_active {
+  background-color: #99B3FF;
+}
+
+/* line 371, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.even.row_selected td {
+  background-color: #B0BED9;
+}
+
+/* line 375, ../../../app/stylesheets/_datatable_jui.scss */
+table.display tr.odd.row_selected td {
+  background-color: #9FAFD1;
+}
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+/* line 384, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd td.sorting_1 {
+  background-color: #D3D6FF;
+}
+
+/* line 388, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd td.sorting_2 {
+  background-color: #DADCFF;
+}
+
+/* line 392, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd td.sorting_3 {
+  background-color: #E0E2FF;
+}
+
+/* line 396, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even td.sorting_1 {
+  background-color: #EAEBFF;
+}
+
+/* line 400, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even td.sorting_2 {
+  background-color: #F2F3FF;
+}
+
+/* line 404, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even td.sorting_3 {
+  background-color: #F9F9FF;
+}
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+/* line 419, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeA td.sorting_1 {
+  background-color: #c4ffc4;
+}
+
+/* line 423, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeA td.sorting_2 {
+  background-color: #d1ffd1;
+}
+
+/* line 427, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeA td.sorting_3 {
+  background-color: #d1ffd1;
+}
+
+/* line 431, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeA td.sorting_1 {
+  background-color: #d5ffd5;
+}
+
+/* line 435, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeA td.sorting_2 {
+  background-color: #e2ffe2;
+}
+
+/* line 439, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeA td.sorting_3 {
+  background-color: #e2ffe2;
+}
+
+/* line 443, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeC td.sorting_1 {
+  background-color: #c4c4ff;
+}
+
+/* line 447, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeC td.sorting_2 {
+  background-color: #d1d1ff;
+}
+
+/* line 451, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeC td.sorting_3 {
+  background-color: #d1d1ff;
+}
+
+/* line 455, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeC td.sorting_1 {
+  background-color: #d5d5ff;
+}
+
+/* line 459, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeC td.sorting_2 {
+  background-color: #e2e2ff;
+}
+
+/* line 463, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeC td.sorting_3 {
+  background-color: #e2e2ff;
+}
+
+/* line 467, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeX td.sorting_1 {
+  background-color: #ffc4c4;
+}
+
+/* line 471, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeX td.sorting_2 {
+  background-color: #ffd1d1;
+}
+
+/* line 475, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeX td.sorting_3 {
+  background-color: #ffd1d1;
+}
+
+/* line 479, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeX td.sorting_1 {
+  background-color: #ffd5d5;
+}
+
+/* line 483, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeX td.sorting_2 {
+  background-color: #ffe2e2;
+}
+
+/* line 487, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeX td.sorting_3 {
+  background-color: #ffe2e2;
+}
+
+/* line 491, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeU td.sorting_1 {
+  background-color: #c4c4c4;
+}
+
+/* line 495, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeU td.sorting_2 {
+  background-color: #d1d1d1;
+}
+
+/* line 499, ../../../app/stylesheets/_datatable_jui.scss */
+tr.odd.gradeU td.sorting_3 {
+  background-color: #d1d1d1;
+}
+
+/* line 503, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeU td.sorting_1 {
+  background-color: #d5d5d5;
+}
+
+/* line 507, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeU td.sorting_2 {
+  background-color: #e2e2e2;
+}
+
+/* line 511, ../../../app/stylesheets/_datatable_jui.scss */
+tr.even.gradeU td.sorting_3 {
+  background-color: #e2e2e2;
+}
+
+/*
+ * Row highlighting example
+ */
+/* line 519, ../../../app/stylesheets/_datatable_jui.scss */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+  background-color: #ECFFB3;
+}
+
+/* line 523, ../../../app/stylesheets/_datatable_jui.scss */
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+  background-color: #E6FF99;
+}
+
+/*
+ * Namespace DTCR - "DataTables ColReorder" plug-in
+ */
+/* line 531, ../../../app/stylesheets/_datatable_jui.scss */
+table.DTCR_clonedTable {
+  background-color: white;
+  z-index: 202;
+}
+
+/* line 536, ../../../app/stylesheets/_datatable_jui.scss */
+div.DTCR_pointer {
+  width: 1px;
+  background-color: #0259C4;
+  z-index: 201;
+}
+
+/* line 542, ../../../app/stylesheets/_datatable_jui.scss */
+body.alt div.DTCR_pointer {
+  margin-top: -15px;
+  margin-left: -9px;
+  width: 18px;
+  background: url("../images/insert.png") no-repeat top left;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * TableTools styles for ColVis
+ */
+/* line 553, ../../../app/stylesheets/_datatable_jui.scss */
+.TableTools {
+  float: right;
+  margin-bottom: 1em;
+}
+
+/* line 558, ../../../app/stylesheets/_datatable_jui.scss */
+.TableTools_Button {
+  position: relative;
+  float: left;
+  margin-right: 3px;
+  padding: 3px 5px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  *cursor: hand;
+}
+
+/* line 570, ../../../app/stylesheets/_datatable_jui.scss */
+button.TableTools_Button::-moz-focus-inner {
+  border: none !important;
+  padding: 0;
+}
+
+/* line 575, ../../../app/stylesheets/_datatable_jui.scss */
+.TableTools_text_hover {
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+}
+
+/* line 580, ../../../app/stylesheets/_datatable_jui.scss */
+div.TableTools_collectionBackground {
+  background-color: black;
+  z-index: 1100;
+}
+
+/* line 585, ../../../app/stylesheets/_datatable_jui.scss */
+div.TableTools_collection {
+  position: relative;
+  width: 150px;
+  background-color: #f3f3f3;
+  padding: 3px;
+  border: 1px solid #ccc;
+  z-index: 1102;
+}
+
+/* line 594, ../../../app/stylesheets/_datatable_jui.scss */
+div.TableTools_collection button.TableTools_Button {
+  background-color: white;
+  width: 100%;
+  float: none;
+  margin-bottom: 2px;
+}
+
+/* line 601, ../../../app/stylesheets/_datatable_jui.scss */
+div.TableTools_catcher {
+  position: absolute;
+  z-index: 1101;
+}
+
+/* line 606, ../../../app/stylesheets/_datatable_jui.scss */
+.disabled {
+  color: #999;
+}
+
+/* line 612, ../../../app/stylesheets/_datatable_jui.scss */
+button.ColVis_Button {
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+/* line 618, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_collection button.ColVis_Button:hover {
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+}
+
+/* line 623, ../../../app/stylesheets/_datatable_jui.scss */
+span.ColVis_radio {
+  display: inline-block;
+  width: 20px;
+}
+
+/*
+ * An alternative styling for ColVis
+ * Note you will likely have to change the path for the background image used by jQuery UI theming:
+ *   ../../../../examples/examples_support/themes/smoothness
+ */
+/* line 634, ../../../app/stylesheets/_datatable_jui.scss */
+.ColVis {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 150px;
+  height: 25px;
+}
+
+/* line 642, ../../../app/stylesheets/_datatable_jui.scss */
+.ColVis_MasterButton {
+  height: 100%;
+  width: 100%;
+  border-left-width: 0;
+  cursor: pointer;
+  *cursor: hand;
+  background: url("/images/icons/colvis_button.png") no-repeat top left;
+}
+
+/* line 651, ../../../app/stylesheets/_datatable_jui.scss */
+button.ColVis_Button::-moz-focus-inner {
+  border: none !important;
+  padding: 0;
+}
+
+/* line 656, ../../../app/stylesheets/_datatable_jui.scss */
+.ColVis_text_hover {
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+}
+
+/* line 661, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_collectionBackground {
+  background-color: black;
+  z-index: 1100;
+}
+
+/* line 666, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_collection {
+  position: relative;
+  width: 150px;
+  background-color: #f9f9f9;
+  padding: 3px;
+  border: 1px solid #ccc;
+  z-index: 1102;
+}
+
+/* line 675, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_collection button.ColVis_Button {
+  height: 30px;
+  width: 100%;
+  margin-right: 3px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  cursor: pointer;
+  *cursor: hand;
+  text-align: left;
+}
+
+/* line 686, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_collection button.ColVis_Button:hover {
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+}
+
+/* line 691, ../../../app/stylesheets/_datatable_jui.scss */
+div.ColVis_catcher {
+  position: absolute;
+  z-index: 1101;
+}
+
+/* line 696, ../../../app/stylesheets/_datatable_jui.scss */
+span.ColVis_radio {
+  display: inline-block;
+  width: 20px;
+}
+
+/* line 701, ../../../app/stylesheets/_datatable_jui.scss */
+button.ColVis_Restore {
+  margin-top: 15px;
+}
+
+/* line 705, ../../../app/stylesheets/_datatable_jui.scss */
+button.ColVis_Restore span {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: left;
+}
+
+/*
+ * Styles needed for DataTables scrolling
+ */
+/* line 715, ../../../app/stylesheets/_datatable_jui.scss */
+div.dataTables_scrollHead {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 720, ../../../app/stylesheets/_datatable_jui.scss */
+div.dataTables_scrollBody {
+  overflow-y: scroll;
+}
+
+/* line 724, ../../../app/stylesheets/_datatable_jui.scss */
+div.dataTables_scrollFoot {
+  overflow: hidden;
+}
+
+/* Customization */
+/* line 732, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers {
+  width: 45%;
+}
+/* line 734, ../../../app/stylesheets/_datatable_jui.scss */
+.paging_full_numbers .ui-button {
+  padding: 0px 6px;
+}
+
+/* line 737, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_paginate {
+  font-size: 12px;
+}
+
+/* line 741, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper {
+  overflow: auto;
+  overflow-y: hidden;
+  min-height: 0;
+  margin-bottom: 15px;
+  width: 100%;
+}
+/* line 747, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display {
+  border-collapse: collapse;
+  border: 0;
+  border-right: 1px solid #AAA;
+  border-left: 1px solid #AAA;
+  width: 100%;
+}
+/* line 753, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display table tr :nth-last-child(1) {
+  border-right: 1px solid #AAA;
+}
+/* line 757, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display thead th {
+  text-shadow: none;
+}
+/* line 761, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display td {
+  padding: 3px 4px;
+  border-right: 1px dotted #999;
+  border-bottom: none;
+  text-shadow: none;
+  color: #333;
+  font-size: 12px;
+}
+/* line 769, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display td a {
+  color: #4433BB;
+}
+/* line 772, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr {
+  background-color: none;
+}
+/* line 775, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.odd {
+  background: #f9f9f9;
+}
+/* line 777, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.odd td.sorting_1 {
+  background: #f9f9f9;
+}
+/* line 779, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.odd:hover {
+  background: #bbeeff;
+}
+/* line 781, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.odd:hover td.sorting_1 {
+  background: #bbeeff;
+}
+/* line 784, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.even {
+  backgorund: #e9e9e9;
+}
+/* line 786, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.even td.sorting_1 {
+  background: #e9e9e9;
+}
+/* line 788, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.even:hover {
+  background: #bbeeff;
+}
+/* line 790, ../../../app/stylesheets/_datatable_jui.scss */
+.dataTables_wrapper table.display tr.even:hover td.sorting_1 {
+  background: #bbeeff;
+}
+
 /* line 1, ../../../app/stylesheets/_base.scss */
 body {
   background-color: #cccccc;
@@ -8,9 +925,9 @@ body {
 }
 
 /* line 9, ../../../app/stylesheets/_base.scss */
-body, p, ol, ul, td {
+body, p, ol, ul {
   font-family: arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -135,6 +1052,7 @@ div.field, div.actions {
 /* line 43, ../../../app/stylesheets/_content.scss */
 dl.attributes {
   border: 1px solid #CECECE;
+  font-size: 13px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -142,7 +1060,7 @@ dl.attributes {
   -khtml-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 46, ../../../app/stylesheets/_content.scss */
+/* line 47, ../../../app/stylesheets/_content.scss */
 dl.attributes dt {
   color: #666666;
   font-weight: bold;
@@ -150,7 +1068,7 @@ dl.attributes dt {
   margin: 5px 5px -4em;
   padding: 5px;
 }
-/* line 53, ../../../app/stylesheets/_content.scss */
+/* line 54, ../../../app/stylesheets/_content.scss */
 dl.attributes dd {
   background-color: #AAAAAA;
   margin: 5px 5px 5px 160px;
@@ -159,6 +1077,17 @@ dl.attributes dd {
   height: 18px;
   text-align: left;
   vertical-align: baseline;
+}
+
+/* line 65, ../../../app/stylesheets/_content.scss */
+table.datatable {
+  width: 100%;
+  font-size: 10px;
+  line-height: 14px;
+}
+/* line 69, ../../../app/stylesheets/_content.scss */
+table.datatable td {
+  vertical-align: top;
 }
 
 /* line 1, ../../../app/stylesheets/_header.scss */
@@ -177,19 +1106,20 @@ dl.attributes dd {
 #header h1 {
   font-size: 52px;
   line-height: 52px;
-  margin: 20px 20px 0;
+  margin: 10px 20px 0;
   padding: 0;
 }
 /* line 14, ../../../app/stylesheets/_header.scss */
 #header h2 {
   font-family: Times New Roman, Serif;
+  font-size: 22px;
   font-style: italic;
   font-weight: normal;
-  margin: 0 20px 15px;
+  margin: 0 20px 20px;
   padding: 0;
 }
 
-/* line 22, ../../../app/stylesheets/_header.scss */
+/* line 23, ../../../app/stylesheets/_header.scss */
 ul#nav {
   clear: right;
   list-style-type: none;
@@ -199,7 +1129,7 @@ ul#nav {
   text-align: center;
   width: 800px;
 }
-/* line 30, ../../../app/stylesheets/_header.scss */
+/* line 31, ../../../app/stylesheets/_header.scss */
 ul#nav li {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -215,17 +1145,17 @@ ul#nav li {
   background-color: #c5afa4;
   color: #444444;
 }
-/* line 39, ../../../app/stylesheets/_header.scss */
+/* line 40, ../../../app/stylesheets/_header.scss */
 ul#nav li a, ul#nav li a:visited {
   color: #444444;
   text-decoration: none;
 }
-/* line 44, ../../../app/stylesheets/_header.scss */
+/* line 45, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover, ul#nav li.selected {
   background-color: #f53f34;
   color: white;
 }
-/* line 47, ../../../app/stylesheets/_header.scss */
+/* line 48, ../../../app/stylesheets/_header.scss */
 ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.selected a:visited {
   color: white;
   text-decoration: none;
