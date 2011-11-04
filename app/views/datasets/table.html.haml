@@ -1,4 +1,4 @@
-=insert_record_limit_note
+.note= t("datasets.note.#{@dataset.service.type}")
 %table.datatable.display
   %thead
     %tr
@@ -9,3 +9,4 @@
       %tr
         - @dataset.attributes.each do |attribute|
           %td= @dataset.attribute_value(row,attribute)
+=insert_record_limit_note

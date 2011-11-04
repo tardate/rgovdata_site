@@ -4,7 +4,6 @@
     %dt= attribute
     %dd= @dataset.send(attribute)
 %h3= t('.collection_title')
-=insert_record_limit_note
 .pageload{ 'data-url' => table_dataset_url(@dataset) }
   .loading= t('loading.api')
 

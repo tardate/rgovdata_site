@@ -35,6 +35,12 @@ en:
     show:
       title: Live Explorer - a Specific Dataset
       collection_title: "Dataset records:"
+    note:
+      csv: The original source for this data is CSV
+      file: "The original source for this data a generic text file; we don't now
+        the specific format, so it is handled as a generic set of rows by default.
+        You can of course apply further parsing of the data once it is received."
+      odata: This data comes from an OData web service
   docs:
     index:
       title: Documentation
