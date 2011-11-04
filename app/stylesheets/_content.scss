@@ -39,3 +39,24 @@
   	text-align: left;
   }
 }
+
+dl.attributes {
+  border: 1px solid #CECECE;
+  @include border-radius(8px);
+  dt {
+    color: #666666;
+    font-weight: bold;
+    height: 36px;
+    margin: 5px 5px -4em;
+    padding: 5px;
+  }
+  dd {
+    background-color: #AAAAAA;
+    margin: 5px 5px 5px 160px;
+    overflow: hidden;
+    padding: 5px 10px;
+    height: 18px;
+    text-align: left;
+    vertical-align: baseline;
+  }
+}

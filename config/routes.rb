@@ -4,5 +4,6 @@ RgovdataSite::Application.routes.draw do
   resources :docs, :guides
 
   resources :realms, :only => [:index,:show]
-  resources :services, :only => [:index,:show]
+  resources :services, :only => [:show]
+  resources :datasets, :only => [:show]
 end

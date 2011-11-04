@@ -1,5 +1,9 @@
 %h2= t('.title')
-= @realm.to_s
+%dl.attributes
+  - @realm.meta_attributes.each do |attribute|
+    %dt= attribute
+    %dd= @realm.send(attribute)
+
 %h3= t('.collection_title')
 %ul
   - @realm.records.each do |service|

@@ -5,6 +5,10 @@ en:
   dashboards:
     show:
       title: About
+  datasets:
+    show:
+      title: Live Explorer - a Specific Dataset
+      collection_title: "Dataset records:"
   docs:
     index:
       title: Documentation
@@ -23,10 +27,9 @@ en:
       title: Live Explorer - Catalog for a Specific Realm
       collection_title: "Available Services:"
   services:
-    index:
-      title: Live Explorer
     show:
-      title: Live Explorer
+      title: Live Explorer - Datasets for a Specific Service
+      collection_title: "Available Datasets:"
   site:
     title: RGovData
     slogan: ".. making government data easier to swallow (for ruby/rails)"

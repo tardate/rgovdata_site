@@ -1,3 +1,12 @@
 %h2= t('.title')
+%dl.attributes
+  - @service.meta_attributes.each do |attribute|
+    %dt= attribute
+    %dd= @service.send(attribute)
+
+%h3= t('.collection_title')
+%ul
+  - @service.records.each do |dataset|
+    %li= link_to dataset, dataset_path(dataset)
 
 .info= t('rgovdata.live_warning')

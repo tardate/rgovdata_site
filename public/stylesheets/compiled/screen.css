@@ -132,6 +132,35 @@ div.field, div.actions {
   text-align: left;
 }
 
+/* line 43, ../../../app/stylesheets/_content.scss */
+dl.attributes {
+  border: 1px solid #CECECE;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 46, ../../../app/stylesheets/_content.scss */
+dl.attributes dt {
+  color: #666666;
+  font-weight: bold;
+  height: 36px;
+  margin: 5px 5px -4em;
+  padding: 5px;
+}
+/* line 53, ../../../app/stylesheets/_content.scss */
+dl.attributes dd {
+  background-color: #AAAAAA;
+  margin: 5px 5px 5px 160px;
+  overflow: hidden;
+  padding: 5px 10px;
+  height: 18px;
+  text-align: left;
+  vertical-align: baseline;
+}
+
 /* line 1, ../../../app/stylesheets/_header.scss */
 #header {
   -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.9);
