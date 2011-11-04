@@ -1,12 +1,21 @@
 %h2= t('.title')
+%p= t('.p1')
+.note= t('.note1')
 
-%p
-  RGovData is a ruby library for really simple access to government data.
-  It aims to make consuming government data sets a "one liner",
-  letting you focus on what you are trying to achieve with the data, and happily
-  ignore all the messy underlying details of transport protocols, authentication and so on.
+%h3= t('.oneline.title')
+%p= t('.oneline.p1')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        RGovData::Catalog.get('//us/eqs7day-M1/csv').records.count
 
-.note
-  RGovData can be used as a command line tool, a library for ruby projects,
-  or a library for rails projects.
+%h3= t('.contributing.title')
+%p= t('.contributing.p1')
 
+%h3= t('.licensing.title')
+%p= t('.licensing.p1')
+
+%h3= t('.encumberance.title')
+%p= t('.encumberance.p1')
+%p= t('.encumberance.p2')
