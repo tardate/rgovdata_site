@@ -10,6 +10,13 @@
       :escaped
         RGovData::Catalog.get('//us/eqs7day-M1/csv').records.count
 
+%p= t('.oneline.p2')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        RGovData::Catalog.get('//sg/nlb/LibrarySet').records.each { |library| puts library.Name }
+
 %h3= t('.resources.title')
 %ul
   %li= link_to t('rgovdata.gem_source'), AppConstants.github_url

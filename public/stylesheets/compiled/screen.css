@@ -1218,17 +1218,21 @@ ul#nav li:hover a, ul#nav li:hover a:visited, ul#nav li.selected a, ul#nav li.se
   width: 800px;
   text-align: center;
 }
+/* line 10, ../../../app/stylesheets/_footer.scss */
+#footer .vanity {
+  font-size: 12px;
+}
 
-/* line 11, ../../../app/stylesheets/_footer.scss */
+/* line 14, ../../../app/stylesheets/_footer.scss */
 ul.bottom_nav {
   clear: both;
   list-style-type: none;
   display: inline-block;
-  height: 26px;
+  height: 22px;
   margin: 0;
   padding: 0;
 }
-/* line 18, ../../../app/stylesheets/_footer.scss */
+/* line 21, ../../../app/stylesheets/_footer.scss */
 ul.bottom_nav li {
   float: left;
   height: 20px;

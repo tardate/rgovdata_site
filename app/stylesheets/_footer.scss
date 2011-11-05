@@ -7,12 +7,15 @@
     width: $d_w_content;
     text-align: center;
   }
+  .vanity {
+    font-size: 12px;
+  }
 }
 ul.bottom_nav {
   clear: both;
   list-style-type: none;
   display: inline-block;
-  height: 26px;
+  height: 22px;
   margin: 0;
   padding: 0;
   li {

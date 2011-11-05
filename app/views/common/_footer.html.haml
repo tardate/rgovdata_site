@@ -6,6 +6,7 @@
         %li= t('rgovdata.resources')
         %li= link_to t('rgovdata.gem_source'), AppConstants.github_url
         %li= link_to t('rgovdata.site_source'), AppConstants.site_github_url
+      .vanity= t('site.vanity').html_safe
 
 - if Rails.env.development?
   = javascript_include_tag :jquery_local, :cache => false

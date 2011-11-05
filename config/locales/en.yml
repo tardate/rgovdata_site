@@ -13,7 +13,10 @@ en:
         or a library for rails projects."
       oneline:
         title: One line.. srsly?
-        p1: "Yes! For example, this gets the number of worldwide M1+ Earthquakes in the past 7 Days:"
+        p1: "Yes! For example, this gets the number of worldwide M1+ Earthquakes
+          in the past 7 Days (from a CSV source):"
+        p2: "Or perhaps, how do I access a complete list of
+          Libraries in Singapore? (this pulls from an OData web service):"
       contributing:
         title: Contributing to RGovData
         p1: "As you can see from the \"Live Examples\", RGovData works;-) But there's a
@@ -74,6 +77,10 @@ en:
     slogan: ".. making government data easier to swallow (for ruby/rails)"
     description: RGovData
     keywords: "government data, ruby, rails, gem, rgovdata"
+    vanity: "RGovData originally created by
+      <a href=\"http://tardate.com\">Paul Gallagher</a> @
+      <a href=\"http://evendis.com\">Evendis Pte Ltd</a>
+      and released under an open-source MIT license"
   rgovdata:
     gem_source: gem source
     site_source: site source
@@ -84,4 +91,4 @@ en:
       requests in order to improve the end-user experience."
     rdoc_info: RGovData API Documentation
     resources: "Resources:"
-    version: "Running with RGovData gem version %{version}"
+    version: "This site is running RGovData gem version %{version}"
