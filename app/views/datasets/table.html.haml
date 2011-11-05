@@ -5,7 +5,7 @@
       - @dataset.attributes.each do |attribute|
         %th= attribute
   %tbody
-    - @dataset.records.each do |row|
+    - @records.each do |row|
       %tr
         - @dataset.attributes.each do |attribute|
           %td= @dataset.attribute_value(row,attribute)
