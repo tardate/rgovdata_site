@@ -48,10 +48,28 @@
   }
 }
 
+ul.explorer {
+  list-style-type: none;
+  padding-left: 18px;
+	margin-top: 5px;
+  li {
+    height: 40px;
+    padding: 0 0 0 40px;
+    background: url(/images/db.png) no-repeat scroll 0px 0px transparent;
+    a, a:visited {
+      display: inline-block;
+      padding: 8px 0 0 5px;
+      text-decoration: none;
+      color: #1441F7;
+    }
+  }
+}
+
 dl.attributes {
   border: 1px solid #CECECE;
   font-size: 13px;
   @include border-radius(8px);
+  @include single-box-shadow(rgba(0,0,0,.6), 1px, 1px, 7px);
   dt {
     color: #666666;
     font-weight: bold;
@@ -60,7 +78,8 @@ dl.attributes {
     padding: 5px;
   }
   dd {
-    background-color: #AAAAAA;
+    @include border-radius(4px);
+    background-color: #CECECE;
     margin: 5px 5px 5px 160px;
     overflow: hidden;
     padding: 5px 10px;

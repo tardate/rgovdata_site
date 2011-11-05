@@ -5,7 +5,7 @@
     %dd= @realm.send(attribute)
 
 %h3= t('.collection_title')
-%ul
+%ul.explorer.service
   - @realm.records.each do |service|
     %li= link_to service, service_path(service)
 
@@ -17,7 +17,7 @@
     = preserve do
       :escaped
         # get the catalog for the realm based on the :id passed in the request
-        @realm = RGovData::Catalog.get("//\#{params[:id]}")
+        @realm = RGovData::Catalog.get(params[:id])
         # .. then you can iterate over the available services
         @realm.services.each do |service|
           puts "service ID: \#{service.id}"

@@ -82,5 +82,6 @@ en:
       downtime or performance issues.
       In a real app, you would probably be doing some smart caching, batching or backgrounding of
       requests in order to improve the end-user experience."
+    rdoc_info: RGovData API Documentation
     resources: "Resources:"
     version: "Running with RGovData gem version %{version}"

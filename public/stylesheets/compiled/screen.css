@@ -1060,6 +1060,26 @@ div.field, div.actions {
 }
 
 /* line 51, ../../../app/stylesheets/_content.scss */
+ul.explorer {
+  list-style-type: none;
+  padding-left: 18px;
+  margin-top: 5px;
+}
+/* line 55, ../../../app/stylesheets/_content.scss */
+ul.explorer li {
+  height: 40px;
+  padding: 0 0 0 40px;
+  background: url(/images/db.png) no-repeat scroll 0px 0px transparent;
+}
+/* line 59, ../../../app/stylesheets/_content.scss */
+ul.explorer li a, ul.explorer li a:visited {
+  display: inline-block;
+  padding: 8px 0 0 5px;
+  text-decoration: none;
+  color: #1441F7;
+}
+
+/* line 68, ../../../app/stylesheets/_content.scss */
 dl.attributes {
   border: 1px solid #CECECE;
   font-size: 13px;
@@ -1069,8 +1089,12 @@ dl.attributes {
   -ms-border-radius: 8px;
   -khtml-border-radius: 8px;
   border-radius: 8px;
+  -moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
 }
-/* line 55, ../../../app/stylesheets/_content.scss */
+/* line 73, ../../../app/stylesheets/_content.scss */
 dl.attributes dt {
   color: #666666;
   font-weight: bold;
@@ -1078,9 +1102,15 @@ dl.attributes dt {
   margin: 5px 5px -4em;
   padding: 5px;
 }
-/* line 62, ../../../app/stylesheets/_content.scss */
+/* line 80, ../../../app/stylesheets/_content.scss */
 dl.attributes dd {
-  background-color: #AAAAAA;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #CECECE;
   margin: 5px 5px 5px 160px;
   overflow: hidden;
   padding: 5px 10px;
@@ -1089,18 +1119,18 @@ dl.attributes dd {
   vertical-align: baseline;
 }
 
-/* line 72, ../../../app/stylesheets/_content.scss */
+/* line 91, ../../../app/stylesheets/_content.scss */
 dl.attributes.classes dd {
   margin-left: 200px;
 }
 
-/* line 76, ../../../app/stylesheets/_content.scss */
+/* line 95, ../../../app/stylesheets/_content.scss */
 table.datatable {
   width: 100%;
   font-size: 10px;
   line-height: 14px;
 }
-/* line 80, ../../../app/stylesheets/_content.scss */
+/* line 99, ../../../app/stylesheets/_content.scss */
 table.datatable td {
   vertical-align: top;
 }

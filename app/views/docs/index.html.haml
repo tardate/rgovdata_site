@@ -6,6 +6,11 @@
   = link_to t('realms.index.short_title'), realms_url
   since it includes code snippets along the way.
 
+%h3= t('dashboards.show.resources.title')
+%ul
+  %li= link_to t('rgovdata.gem_source'), AppConstants.github_url
+  %li= link_to t('rgovdata.site_source'), AppConstants.site_github_url
+  %li= link_to t('rgovdata.rdoc_info'), AppConstants.rdoc_url
 
 %h3 Configuration
 %p

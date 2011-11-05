@@ -5,7 +5,7 @@
     %dd= raw auto_link @service.send(attribute).to_s
 
 %h3= t('.collection_title')
-%ul
+%ul.explorer.dataset
   - @service.records.each do |dataset|
     %li= link_to dataset, dataset_path(dataset)
 
