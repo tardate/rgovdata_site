@@ -8,3 +8,20 @@
   .loading= t('loading.api')
 
 .info= t('rgovdata.live_warning')
+%h3= t('howto.api')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        # get a dataset:
+        @dataset = RGovData::Catalog.get('//sg/nlb/LibrarySet')
+        # inspect the "meta" attributes of the dataset:
+        puts @dataset.meta_attributes.join(',')
+        #  you can iterate over the datasets:
+        @dataset.records.each { |row| puts row }
+        # use the attributes collection to address elements of a row:
+        row = @dataset.records.first
+        @dataset.attributes.each do |attribute|
+          puts "\#{attribute}: \#{@dataset.attribute_value(row,attribute)}"
+        end
+

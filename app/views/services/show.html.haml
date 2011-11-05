@@ -10,3 +10,17 @@
     %li= link_to dataset, dataset_path(dataset)
 
 .info= t('rgovdata.live_warning')
+
+%h3= t('howto.api')
+%pre.code
+  %code
+    = preserve do
+      :escaped
+        # get a service listing:
+        @service = RGovData::Catalog.get('//sg/nlb')
+        # inspect the "meta" attributes of the listing:
+        puts @service.meta_attributes.join(',')
+        # .. then you can iterate over the available datasets:
+        @service.datasets.each do |dataset|
+          puts "dataset ID: \#{dataset.id}"
+        end
