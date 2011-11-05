@@ -9,6 +9,8 @@
     = preserve do
       :escaped
         RGovData::Catalog.get('//us/eqs7day-M1/csv').records.count
+.inline-pageload.examples{ 'data-url' => harparray_examples_url }
+  .prompt= t('show_me')
 
 %p= t('.oneline.p2')
 %pre.code
@@ -16,6 +18,8 @@
     = preserve do
       :escaped
         RGovData::Catalog.get('//sg/nlb/LibrarySet').records.each { |library| puts library.Name }
+.inline-pageload.examples{ 'data-url' => nlb_examples_url }
+  .prompt= t('show_me')
 
 %h3= t('.resources.title')
 %ul

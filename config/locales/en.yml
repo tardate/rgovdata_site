@@ -49,6 +49,12 @@ en:
   docs:
     index:
       title: Documentation
+  examples:
+    harparray:
+      result: "Holy Harp Array, Batman! There were %{quakes} M1+ quakes this week!"
+    nlb:
+      title: "List of Singapore Libraries"
+      p1: ".. as sourced from the ProjectNimbus OData web service"
   guides:
     index:
       title: Getting Started
@@ -72,6 +78,7 @@ en:
     show:
       title: Live Explorer - Datasets for a Specific Service
       collection_title: "Available Datasets:"
+  show_me: "(So what's the answer then?)"
   site:
     title: RGovData
     slogan: ".. making government data easier to swallow (for ruby/rails)"

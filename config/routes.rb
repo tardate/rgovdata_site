@@ -8,4 +8,10 @@ RgovdataSite::Application.routes.draw do
   resources :datasets, :only => [:show] do
     get :table, :on => :member
   end
+  resources :examples, :only => [:index] do
+    collection do
+      get :harparray
+      get :nlb
+    end
+  end
 end

@@ -1017,16 +1017,47 @@ div.field, div.actions {
   padding: 2px 0px 15px 43px;
   width: 200px;
 }
+/* line 17, ../../../app/stylesheets/_content.scss */
+.loading.inline {
+  padding: 4px 0px 4px 43px;
+  width: auto;
+}
 
-/* line 19, ../../../app/stylesheets/_content.scss */
+/* line 22, ../../../app/stylesheets/_content.scss */
+.inline-pageload {
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 24, ../../../app/stylesheets/_content.scss */
+.inline-pageload .prompt {
+  font-size: 12px;
+  text-decoration: underline;
+}
+/* line 28, ../../../app/stylesheets/_content.scss */
+.inline-pageload.examples {
+  padding-left: 22px;
+}
+/* line 31, ../../../app/stylesheets/_content.scss */
+.inline-pageload .example-result {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 242, 185, 0.6);
+  padding: 8px;
+}
+
+/* line 38, ../../../app/stylesheets/_content.scss */
 .info, .note, .code {
   background: url("/images/tab_note.gif") no-repeat scroll left top #fff9d8;
   border: medium none;
-  margin: 0.25em 0 1.5em;
-  padding: 1em 1em 1em 48px;
+  margin: 10px 0;
+  padding: 14px 14px 14px 48px;
 }
 
-/* line 25, ../../../app/stylesheets/_content.scss */
+/* line 44, ../../../app/stylesheets/_content.scss */
 .warning {
   background: url("/images/tab_red.gif") no-repeat scroll left top #f9d9d8;
   border: medium none;
@@ -1034,16 +1065,16 @@ div.field, div.actions {
   padding: 1.25em 1.25em 1.25em 48px;
 }
 
-/* line 31, ../../../app/stylesheets/_content.scss */
+/* line 50, ../../../app/stylesheets/_content.scss */
 .info {
   background: url("/images/tab_info.gif") no-repeat scroll left top #d5e9f6;
 }
 
-/* line 34, ../../../app/stylesheets/_content.scss */
+/* line 53, ../../../app/stylesheets/_content.scss */
 .code {
   background: url("/images/tab_grey.gif") no-repeat scroll left top #eeeeee;
 }
-/* line 36, ../../../app/stylesheets/_content.scss */
+/* line 55, ../../../app/stylesheets/_content.scss */
 .code code {
   line-height: 18px;
   overflow: auto;
@@ -1059,19 +1090,19 @@ div.field, div.actions {
   text-align: left;
 }
 
-/* line 51, ../../../app/stylesheets/_content.scss */
+/* line 70, ../../../app/stylesheets/_content.scss */
 ul.explorer {
   list-style-type: none;
   padding-left: 18px;
   margin-top: 5px;
 }
-/* line 55, ../../../app/stylesheets/_content.scss */
+/* line 74, ../../../app/stylesheets/_content.scss */
 ul.explorer li {
   height: 40px;
   padding: 0 0 0 40px;
   background: url(/images/db.png) no-repeat scroll 0px 0px transparent;
 }
-/* line 59, ../../../app/stylesheets/_content.scss */
+/* line 78, ../../../app/stylesheets/_content.scss */
 ul.explorer li a, ul.explorer li a:visited {
   display: inline-block;
   padding: 8px 0 0 5px;
@@ -1079,7 +1110,7 @@ ul.explorer li a, ul.explorer li a:visited {
   color: #1441F7;
 }
 
-/* line 68, ../../../app/stylesheets/_content.scss */
+/* line 87, ../../../app/stylesheets/_content.scss */
 dl.attributes {
   border: 1px solid #CECECE;
   font-size: 13px;
@@ -1094,7 +1125,7 @@ dl.attributes {
   -o-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
 }
-/* line 73, ../../../app/stylesheets/_content.scss */
+/* line 92, ../../../app/stylesheets/_content.scss */
 dl.attributes dt {
   color: #666666;
   font-weight: bold;
@@ -1102,7 +1133,7 @@ dl.attributes dt {
   margin: 5px 5px -4em;
   padding: 5px;
 }
-/* line 80, ../../../app/stylesheets/_content.scss */
+/* line 99, ../../../app/stylesheets/_content.scss */
 dl.attributes dd {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1119,18 +1150,18 @@ dl.attributes dd {
   vertical-align: baseline;
 }
 
-/* line 91, ../../../app/stylesheets/_content.scss */
+/* line 110, ../../../app/stylesheets/_content.scss */
 dl.attributes.classes dd {
   margin-left: 200px;
 }
 
-/* line 95, ../../../app/stylesheets/_content.scss */
+/* line 114, ../../../app/stylesheets/_content.scss */
 table.datatable {
   width: 100%;
   font-size: 10px;
   line-height: 14px;
 }
-/* line 99, ../../../app/stylesheets/_content.scss */
+/* line 118, ../../../app/stylesheets/_content.scss */
 table.datatable td {
   vertical-align: top;
 }

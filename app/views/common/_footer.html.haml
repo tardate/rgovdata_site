@@ -16,7 +16,9 @@
 
 :javascript
   jQuery(document).ready(function() {
-    RGD.init({});
+    RGD.init({
+      inline_loading_text: '#{html_escape(t('loading.api'))}'
+    });
   });
 
 = yield :javascript

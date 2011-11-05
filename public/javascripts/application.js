@@ -1,5 +1,7 @@
 var RGD = {
-  config: {},
+  config: {
+    inline_loading_text: 'Loading..'
+  },
   
   init: function(settings) {
     $.extend(RGD.config, settings);
@@ -7,10 +9,23 @@ var RGD = {
   },
 
   setup: function() {
+    RGD.enableControls();
     setTimeout(RGD.asyncSetup, 200);
   },
   asyncSetup: function() {
     RGD.asyncPageLoad();
+  },
+
+  enableControls: function() {
+    $('.inline-pageload').bind('click', function() {
+      var target = $(this);
+      var url = target.data('url') || target.attr('href');
+      if (url != "") {
+        target.html('<div class="loading inline">' + RGD.config.inline_loading_text + '<div>');
+        RGD.load_page(url,target);
+      }
+      return false;
+    });
   },
 
   asyncPageLoad: function() {

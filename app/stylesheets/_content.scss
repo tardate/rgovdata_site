@@ -14,13 +14,32 @@
   margin: 0 auto;
   padding: 2px 0px 15px 43px;
   width: 200px;
+  &.inline {
+    padding: 4px 0px 4px 43px;
+    width: auto;
+  }
+}
+.inline-pageload {
+  cursor: pointer; cursor: hand;
+  .prompt {
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  &.examples {
+    padding-left: 22px;
+  }
+  .example-result {
+    @include border-radius(8px);
+    background-color: $c_bg_example_result;
+    padding: 8px;
+  }
 }
 
 .info, .note, .code {
   background: url("/images/tab_note.gif") no-repeat scroll left top #FFF9D8;
   border: medium none;
-  margin: 0.25em 0 1.5em;
-  padding: 1em 1em 1em 48px;
+  margin: 10px 0;
+  padding: 14px 14px 14px 48px;
 }
 .warning {
   background: url("/images/tab_red.gif") no-repeat scroll left top #F9D9D8;
