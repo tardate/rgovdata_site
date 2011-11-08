@@ -5,10 +5,10 @@ development: &default
   site_github_url: https://github.com/tardate/rgovdata_site
   rdoc_url: http://rubydoc.info/gems/rgovdata/0.1.0/frames
   live_explorer_record_limit: 5
-  
+
 production:
   <<: *default
   ga_id: UA-4894631-12
-  
+
 test:
   <<: *default
